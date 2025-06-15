@@ -7,7 +7,7 @@ services:
   server:
     build: .
     ports:
-      - "3000:3000"
+      - "3005:3005"
     environment:
       - REDIS_HOST=redis
     depends_on:
