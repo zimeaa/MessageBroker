@@ -1,7 +1,7 @@
 const Redis = require('ioredis');
 
 const redis = new Redis({
-    host: 'localhost', // or your Docker host IP
+    host: process.env.REDIS_HOST || 'localhost',
     port: 6379
 });
 
